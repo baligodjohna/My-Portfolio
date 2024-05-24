@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johna Mae Baligod</title>
+  <link rel="stylesheet" href="myportfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="name-section">
+        <img src="Images/headerpic.jpg" alt="Johna Mae Baligod" class="profile-pic">
+        <h1><b>Hi, I am Johna Mae Baligod.</b></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#involvement">Membership</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="home" class="content-section">
+        <div class="column">
+          <p><b>Aspiring Visual Designer leveraging my passion for creating visually-appealing and user-friendly interfaces, 
+            I'm eager to translate design concepts into reality. Currently a Computer Science student at the University of Saint Louis ,
+             I'm always looking to learn and contribute to innovative projects.</b></p>
+        </div>
+      </section>
+      
+      <!-- Projects Section -->
+<section id="projects" class="content-section">
+  <h2>Projects.</h2>
+  <div class="column">
+      <div class="project-container">
+          <div class="column project-image">
+              <img src="Images/votingForm.png" alt="Projects Image 1">
+          </div>
+          <div class="column project-description">
+              <p><b>Web Programming:</b> A Final Project Voting System for Aspiring Students at the University of Saint Louis" was a project developed for the University of Saint Louis. While the system was completed as a final project, it was not utilized by the school because the voting or election had already been conducted.</p>
+          </div>
+      </div>
+      <div class="project-container">
+          <div class="column project-image">
+              <img src="Images/cropcart.png" alt="Projects Image 2">
+          </div>
+          <div class="column project-description">
+              <p><b>Technopreneurship: [Visual & Innovative Skills]</b><br>Improving the agricultural trading system for farmers involves enhancing the processes and mechanisms through which farmers buy and sell their products. </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+    
+
+
+    <section id="involvement" class="content-section">
+      <h2>Membership.</h2>
+      <div class="column">
+          <div class="membership-container">
+              <div class="column">
+                  <img src="Images/dsc-officer.png" alt="Involvement Image 1">
+              </div>
+              <div class="column">
+                  <p>Logistic - Google Developer Student Club</p>
+              </div>
+              <div class="column">
+                <p>2023 - Present</p>
+            </div>
+          </div>
+          <div class="membership-container">
+              <div class="column">
+                  <img src="Images/coursera.png" alt="Involvement Image 2">
+              </div>
+              <div class="column">
+                  <p> Department of Trade Google Learning Program: <b>Google x Dti</b></p>
+              </div>
+              <div class="column">
+                <p>Present</p>
+            </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+  <section id="skills" class="content-section">
+    <h2>Skills.</h2>
+    <div class="skills-container">
+        <div class="row">
+            <div class="column">
+                <img src="Images/figma.png" alt="Skill 1">
+            </div>
+            <div class="column">
+                <img src="Images/html.png" alt="Skill 2">
+            </div>
+            <div class="column">
+                <img src="Images/css.png" alt="Skill 3">
+            </div>
+            <!-- Add two more columns here -->
+            <div class="column">
+                <img src="Images/canva.png" alt="Skill 4">
+            </div>
+            <div class="column">
+                <img src="Images/angular.png" alt="Skill 5">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Images/productivitysoftware.png" alt="Skill 4">
+            </div>
+            <div class="column">
+                <img src="Images/csharp.png" alt="Skill 5">
+            </div>
+            <div class="column">
+                <img src="Images/js.png" alt="Skill 6">
+            </div>
+            <div class="column">
+                <img src="Images/dataanalytics.png" alt="Skill 7">
+            </div>
+            <div class="column">
+                <img src="Images/github.png" alt="Skill 8">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+<!-- Closing Section -->
+<section id="contact" class="content-section">
+  <div class="column">
+    <h3>Hit me up.</h3>
+    <p>baligodjohna@gmail.com for inquiries.</p>
+    <a href="Baligod-Resume.pdf" download="Johna_Mae_Baligod_Resume.pdf" class="button">View Resume</a>
+
+  </div>
+</section>
+
+
+    </main>
+    <footer class="footer">
+    </footer>
+  </div>
+
+  <div class="light-effect" id="lightEffect"></div>
+
+<script>
+
+  
+document.addEventListener('mousemove', (e) => {
+    const lightEffect = document.getElementById('lightEffect');
+    const size = Math.random() * 150 + 150; // Random size between 150 and 300
+    lightEffect.style.width = `${size}px`;
+    lightEffect.style.height = `${size}px`;
+    lightEffect.style.left = `${e.pageX - size / 2}px`;
+    lightEffect.style.top = `${e.pageY - size / 2}px`;
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start' // Align the top of the target element at the top of the scroll container
+            });
+        });
+    });
+});
+</script>
+</body>
+</html>
