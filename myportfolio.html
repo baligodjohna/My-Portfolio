@@ -17,13 +17,15 @@
         <img src="Images/headerpic.jpg" alt="Johna Mae Baligod" class="profile-pic">
         <h1><b>Hi, I am Johna Mae Baligod.</b></h1>
       </div>
+
+      
       <nav class="nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#involvement">Membership</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="mailto:baligodjohna@gmail.com">Contact</a></li> <!-- This will redirect to email -->
+          <li><a href="mailto:baligodjohna@gmail.com">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -33,6 +35,9 @@
           <p><b>Aspiring Visual Designer leveraging my passion for creating visually-appealing and user-friendly interfaces, 
             I'm eager to translate design concepts into reality. Currently a Computer Science student at the University of Saint Louis,
             I'm always looking to learn and contribute to innovative projects.</b></p>
+          <a href="Baligod-Resume.pdf" class="button" download>
+            View Resume <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </section>
       
@@ -84,14 +89,14 @@
       
       <!-- Membership Section -->
       <section id="involvement" class="content-section">
-        <h2>Membership</h2>
+        <h2>Membership.</h2>
         <div class="column">
           <div class="membership-container">
             <div class="column">
               <img src="Images/dsc-officer.png" alt="Involvement Image 1" class="skills-img"> <!-- Adjust class name -->
             </div>
             <div class="column">
-              <p>Logistic - Google Developer Student Club</p>
+              <p><b>Logistic - Google Developer Student Club</b></p>
             </div>
             <div class="column">
               <p>2023 - Present</p>
@@ -102,7 +107,7 @@
               <img src="Images/coursera.png" alt="Involvement Image 2" class="skills-img"> <!-- Adjust class name -->
             </div>
             <div class="column">
-              <p>Department of Trade Google Learning Program: <b>Google x Dti</b></p>
+              <p><b>Department of Trade Google Learning Program: Google x Dti</b></p>
             </div>
             <div class="column">
               <p>Present</p>
@@ -113,7 +118,7 @@
       
       <!-- Skills Section -->
       <section id="skills" class="content-section">
-        <h2>Skills</h2>
+        <h2>Skills.</h2>
         <div class="skills-container">
           <div class="row">
             <div class="skills-column"> <!-- Adjust class name -->
@@ -152,49 +157,16 @@
         </div>
       </section>
 
-      
-<!-- Contact Section -->
-<section id="contact" class="content-section">
-    <div class="column">
-        <h3>Hit me up.</h3>
-        <p>Feel free to drop me a message anytime!<br>
-        Whether you have a question or just <br>want to chat,
-         I'll do my best to respond quickly.<br> Looking forward to hearing from you!</p>
-         <a href="Baligod-Resume.pdf" class="button" download>
-            View Resume <i class="fas fa-arrow-right"></i>
-          </a>
-    </div>
-</section>
-    
-    
+    <!-- Contact Section -->
+    <section id="contact">
+       <h3>Hit me up.</h3>
+       <p>Feel free to drop me a message anytime!<br>
+       Whether you have a question or just <br>want to chat,
+       I'll do my best to respond quickly.<br> Looking forward to hearing from you!</p>
+  </section>
+  <p class="footer-text">&copy; 2024 Johna Mae Baligod, All rights reserved.</p>
+
     </main>
-    <footer class="footer">
-    </footer>
   </div>
-
-  <div class="light-effect" id="lightEffect"></div>
-
-  <script>
-    document.addEventListener('mousemove', (e) => {
-      const lightEffect = document.getElementById('lightEffect');
-      const size = Math.random() * 150 + 150; // Random size between 150 and 300
-      lightEffect.style.width = `${size}px`;
-      lightEffect.style.height = `${size}px`;
-      lightEffect.style.left = `${e.pageX - size / 2}px`;
-      lightEffect.style.top = `${e.pageY - size / 2}px`;
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start' // Align the top of the target element at the top of the scroll container
-          });
-        });
-      });
-    });
+</body>
+</html>
