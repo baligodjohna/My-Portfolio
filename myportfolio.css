@@ -48,6 +48,7 @@ body {
     height: 100vh;
     overflow-y: auto; /* Change to 'auto' to enable scrolling only when necessary */
     scroll-behavior: smooth;
+    
 }
 
 .header {
